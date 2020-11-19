@@ -1,0 +1,19 @@
+{
+    "name": "Test Extension",
+    "version": "3.0",
+    "description": "Send a console.log entry and create an alert on Google.com",
+    "permissions": ["declarativeContent", "tabs"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {},
+    "content_scripts": [
+        {
+          "matches": ["https://*.example.com/*"], // Only loads these on example.com
+          "css": ["contentStyleSheet.css"],
+          "js": ["contentScript.js"]
+        }
+      ],
+    "manifest_version": 2
+  }
