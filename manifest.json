@@ -1,7 +1,7 @@
 {
     "name": "Test Extension",
     "version": "3.0",
-    "description": "Send a console.log entry and create an alert on Google.com",
+    "description": "Create a div block on https://example.com",
     "permissions": ["declarativeContent", "tabs"],
     "background": {
         "scripts": ["background.js"],
